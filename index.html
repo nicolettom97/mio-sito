@@ -1,0 +1,1744 @@
+<!-- struttura base del documento -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- metadati e titoli -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+
+<!-- corpo della pagina-->
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box" border-radius=5px>
+          <img src="./assets/images/MarcoNicoletto.jpg" alt="Marco Nicoletto" style="width: 260px; height: auto;" >
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Marco Nicoletto">Marco Nicoletto</h1>
+
+          <p class="title"> Electronic Engineer </p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">          
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:nicoletto.marco.0@gmail.com" class="contact-link">nicoletto.marco.0@gmail.com</a>
+            </div>
+
+          </li>
+    
+          <!--
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Office 3CD3, Torre Archimede - Padova</address>
+            </div>
+
+          </li>
+          -->
+        </ul>
+
+        <div class="separator"></div>
+
+        
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/marco-nicoletto-601634217/" class="social-link" target="_blank" title="linkedin">
+              <!--<ion-icon name="logo-facebook"></ion-icon>-->
+              <div>
+                <img src="./assets/images/linkedin.png", width="30">
+              </div>
+            </a>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Profile</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Jobs</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #profile
+      -->
+
+      <article class="profile active" data-page="profile">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="profile-text">
+          <p>
+            I am an Electronic Engineer, a graduate of the University of Padua, with a strong background in electronics. 
+          </p><p>
+            I pursued a Master's degree in Electronic Engineering, followed by a Ph.D. focused on semiconductors for renewable energy. 
+          </p><p>
+            My research has led to multiple publications in peer-reviewed journals and participation in international conferences, allowing me to engage with the global scientific community. 
+          </p><p>
+            I value teamwork and collaboration as key drivers of innovation and efficiency.
+          </p><p>
+            Currently, I am part of Infineon Technologies, contributing to the development of sustainable and digital solutions through decarbonization and digitalization.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I do</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/infineonlogo.png" alt="Infineon Technologies" width="45">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Infineon Technologies</h4>
+
+                <p class="service-item-text">
+                  As a Senior Specialist Analog & Mixed-Signal Verification Engineer at Infineon Technologies, I am responsible for the verification of analog and mixed-signal DCDC converters for automotive applications.</p>
+                <p class="service-item-text">  
+                  My role, based at the R&D Center in Padova, involves defining and executing verification strategies, ensuring design quality, and collaborating closely with cross-functional teams to develop high-performance integrated circuits.</p>
+                <p class="service-item-text">
+                  I also contribute to feasibility studies, documentation, and testing concepts to drive innovation in automotive technology.</p>
+                
+              </div>
+
+            </li>
+
+            <!---
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/teacher.png" alt="Teaching Assistant" width="45">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Teaching Assistant</h4>
+
+                <p class="service-item-text">
+                  Teaching activities for Cybersecurity and Computer Science Master's degree courses.
+                </p>
+              </div>
+
+            </li>
+          -->
+            <!--
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+            -->
+
+            <!--
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+            -->
+            
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+        <!--
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+        -->
+        
+
+        <!--
+          - testimonials modal
+        -->
+        
+        
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+        
+        
+
+        <!--
+          - clients
+        -->
+
+        <!--
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">University & Research Group</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://www.unipd.it/" target="_blank">
+                <img src="./assets/images/logo1-unipd.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://spritz.math.unipd.it/" target="_blank">
+                <img src="./assets/images/logo2-spritz.png" alt="client logo">
+              </a>
+            </li>
+        
+            -->
+
+            <!--
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+            -->
+
+            <!--
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+            -->
+
+            <!--
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+            -->
+
+            <!--
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+            -->
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="education" data-page="education">
+
+        <header>
+          <h2 class="h2 article-title">Education</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Academic Background</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ph.D. Information Engineering</h4>
+
+              <span>October 2021 — October 2024</span>
+              <span>University of Padova</span>
+
+              <p class="timeline-text">
+                Project Title: Innovative photovoltaics with GaN-InGaN Multiple Quantum Well and Cu(InGa)Se2 (CIGS) solar cells for energy harvesting, photodetection and space applications. </p>
+              <p class="timeline-text">
+                Objective: experimental characterization, modeling and simulation of innovative semiconductors for photovoltaic technologies.</p>
+              <!--<p class="timeline-text">
+                Supervisor: Meneghesso Gaudenzio.</p>-->
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Master’s Degree in Electronic Engineering
+              </h4>
+
+              <span>October 2019 — October 2021</span>
+              <span>University of Padova</span>
+              <span>Final Grade: 110 cum Laude (over 110)</span>
+              <span>Grade Point Average: 29.1 (over 30)</span>
+
+              <p class="timeline-text">
+                Final Degree Project: Innovative photovoltaics with GaN-InGaN MQW and Cu(InGa)Se2 (CIGS) solar cells for energy harvesting, photodetection and space applications. (Supervisor: Meneghini Matteo).
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">First level degree in Information Engineering
+              </h4>
+
+              <span>October 2016 — October 2019</span>
+              <span>University of Padova</span>
+              <span>Final Grade: 110 cum Laude (over 110)</span>
+              <span>Grade Point Average: 29.8 (over 30)</span>
+
+              <p class="timeline-text">
+                Final Degree Project: Design and application of logarithmic amplifiers. (Supervisor: Meneghesso Gaudenzio).
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High School Diploma. Section: applied sciences
+              </h4>
+
+              <span>2011 — 2016</span>
+              <span>Liceo Scientifico E. Curiel</span>
+              <span>Final Grade: 100 (over 100)</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Qualification</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">I passed the state exam to qualify as a professional Information Engineer</h4>
+
+              <span>date: 20-01-2023</span>
+
+            </li>
+          </ol>
+          
+      </article>
+
+ <!--
+        - #RESUME
+      -->
+
+      <article class="jobs" data-page="jobs">
+
+        <header>
+          <h2 class="h2 article-title">Jobs</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Current position</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Senior Specialist Analog and Mixed Signal Verification Engineering</h4>
+
+              <span>October 2024 — Ongoing</span>
+              <span>Infineon Technologies S.r.l.</span>
+              <span>Location: italy</span>
+
+              <button class="btn-approfondisci" onclick="toggleDetails()">See more</button>
+
+              <!-- Sezione di testo che verrà mostrata solo quando il pulsante viene cliccato -->
+              <div class="detailed-text" style="display:none;">
+                
+                  <ul class="custom-list">
+                    <li><p class="timeline-text">Analog and mixed-signal verificaion of IC modules and subsystems</p></li>
+                    <li><p class="timeline-text">Expertise in key technologies, including converters, clocking, high-speed interfaces, and power management</p></li>
+                    <li><p class="timeline-text">Involvement in innovation projects, leveraging AI/Machine Learning to automate verification workflows</p></li>
+                    <li><p class="timeline-text">Programming activity in Perl, Python and Matlab, with experience in simulators (XA, XA/VCS, TITAN)</p></li>
+                  </ul>
+                
+              </div>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Job experiences</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ph.D. Student in Information Engineering</h4>
+
+              <span>October 2021 — October 2023</span>
+              <span>University of Padova</span>
+              <span>Location: italy</span>
+
+              <button class="btn-approfondisci" onclick="toggleDetails()">See more</button>
+
+              <!-- Sezione di testo che verrà mostrata solo quando il pulsante viene cliccato -->
+              <div class="detailed-text" style="display:none;">
+                
+                  <ul class="custom-list">
+                    <li><p class="timeline-text">Analysis of InGaN-GaN MQW solar cells:<br></p></li><p class="timeline-text-2">
+                      Techniques used: I-V (dark and light) characterization, photocurrent measurements, quantum efficiency measurements, electroluminescence (EL), infrared radiation (IR) imaging and LabVIEW for automation.
+                  </p>
+                  <li><p class="timeline-text">Investigation of degradation and stability of InGaN-GaN MQW solar cells:<br></p></li><p class="timeline-text-2">
+                      Techniques used: Stress testing (temperature and optical), I-V characteristics (dark and light), electroluminescence analysis, microscopy for defect characterization.
+                  </p>
+                  <li><p class="timeline-text">Numerical simulations and conduction models:<br></p></li><p class="timeline-text-2">
+                      Techniques used: TCAD Sentaurus (Synopsys), Matlab, Python, Casino, SPICE.
+                  </p>
+                  <li><p class="timeline-text">Investigation of optical properties and defects:<br></p></li><p class="timeline-text-2">
+                      Techniques used: LBIC, micro-PL, micro-EL, SEM, TEM, STEM-EDX analysis.
+                  </p>
+                  <li><p class="timeline-text">Optimization of solar cell structures:<br></p></li><p class="timeline-text-2">
+                      Techniques used: Device optimization, simulation of two-quantum-well structures, analysis of indium concentration effects, numerical simulations.
+                  </p>
+                  <li><p class="timeline-text">Analysis and degradation of multicrystalline silicon photovoltaic panels:<br></p></li><p class="timeline-text-2">
+                      Techniques used: Electroluminescence (EL), infrared (IR) radiation, I-V characteristics, analysis of hail damage, defect-related conduction mechanisms.
+                  </p>
+                </ul>
+                
+              </div>
+
+            </li>
+
+          </ol>
+          <br>
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+    
+              <h4 class="h4 service-item-title">Teaching Assistant</h4>
+              <span>October 2021 — October 2023</span>
+              <span>University of Padova</span>
+              <span>Location: italy</span>
+
+              <button class="btn-approfondisci" onclick="toggleDetails()">See more</button>
+
+              <!-- Sezione di testo che verrà mostrata solo quando il pulsante viene cliccato -->
+              <div class="detailed-text" style="display:none;">
+
+                  <ul class="custom-list">
+                    <li><p class="timeline-text">Integrative Didactic Tutoring: “Optoelectronic and Photovoltaic devices”, UNIPD, LM-EE<br></p></li><p class="timeline-text-2">
+                      Laboratory activities regarding the characterization, analysis, and modeling of optoelectronic and photovoltaic devices (LEDs, LDs, Solar Cells). 
+                  </p>
+                  <li><p class="timeline-text">Formative Tutoring: “Mathematical Analysis I”, UNIPD, DII L-9<br></p></li><p class="timeline-text-2">
+                    Exercise lessons related to the course of Mathematical Analysis 1 (including the main topics of this course, such as limits, continuity, differentiation, integration, sequences and series, partial derivatives, and multiple integrals).
+                  </p>
+                  </ul>
+                
+              </div>
+
+            </li>
+
+          </ol>
+        </section>
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Other work experiences</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Micro-electroluminescence and micro-photoluminescence Characterization</h4>
+
+              <span>March 2023</span>
+              <span>Institute of Physics, Chemnitz University of Technology</span>
+              <span>Location: Germany</span>
+
+            </li>
+
+          </ol>
+          <br>
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+    
+              <h4 class="h4 service-item-title">Secondary Electron Microscopy Characterization</h4>
+              <span>October 2022 — October 2024</span>
+              <span>Geoscience Department University of Padova</span>
+              <span>Location: italy</span>
+
+            </li>
+
+          </ol>
+          <br>
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+    
+              <h4 class="h4 service-item-title">Cathodoluminescence Characterizations</h4>
+              <span>February 2024</span>
+              <span>Department of Materials Science and Metallurgy, University of Cambridge</span>
+              <span>Location: England</span>
+
+            </li>
+
+          </ol>
+        </section>
+
+      </article>
+      <!--
+        - #PUBLICATIONS
+      -->
+
+      <article class="publications" data-page="publications">
+
+        <header>
+          <h2 class="h2 article-title">Publications</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">ACCEPTED PUBLICATIONS</h3>
+          </div>              
+
+          <button class="btn-approfondisci" onclick="toggleContent()"><h4 class="h4">International Journals</h4></button>
+          <div id="content" style="display: none;">
+          <br>
+        
+          <ol class="timeline-list">
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Changes in the extraction and collection efficiency of GaN-based MQW solar cells under optical step-stress</h4>
+                <span>Microelectronics Reliability</span>
+                <span>2025</span>
+                <span>Role: Author</span>
+                <div style="display: flex; gap: 5px; align-items: center;">
+                  <span>DOI:</span>
+                  <a href="https://doi.org/10.1016/j.microrel.2025.115633" style="color: hsl(27, 65%, 52%); text-decoration: none;">10.1016/j.microrel.2025.115633</a>
+              </div>
+                <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+                <div class="detailed-text" style="display:none;">
+                    <ul class="custom-list">
+                        <p class="timeline-text">This study examines the impact of optical step-stress on the extraction and collection efficiency of GaN-based multiple-quantum-well (MQW) solar cells. The paper details how different stress levels alter the device's performance, providing crucial information for improving the stability and efficiency of GaN-based photovoltaics under operational conditions.</p>
+                    </ul>
+                </div>
+            </li>
+          </ol>
+          <br>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Hail Damage Investigation in Heterojunction Silicon Photovoltaic Modules: A Real-World Case Study</h4>
+                <span>IEEE Journal of Photovoltaics</span>
+                <span>2025</span>
+                <span>Role: Author</span>
+                <div style="display: flex; gap: 5px; align-items: center;">
+                    <span>DOI:</span>
+                    <a href="https://doi.org/10.1109/JPHOTOV.2025.3539292" style="color: hsl(27, 65%, 52%); text-decoration: none;">10.1109/JPHOTOV.2025.3539292</a>
+                </div>
+                <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+                <div class="detailed-text" style="display:none;">
+                    <ul class="custom-list">
+                        <p class="timeline-text">This study investigates hail damage to heterojunction silicon photovoltaic modules using techniques like electroluminescence (EL), infrared imaging, and voltage measurement. The research identifies latent damage and hot spots caused by hailstorms and provides insights into the mechanical resistance of solar panels, offering guidance for standards related to durability and long-term reliability in extreme weather conditions.</p>
+                    </ul>
+                </div>
+            </li>
+          </ol>
+          <br>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">TCAD Modeling and Simulation of Dark Current-Voltage Characteristics in High-Periodicity InGaN/GaN Multiple-Quantum-Wells (MQWs) Solar Cells</h4>
+              <span>IEEE Journal of Photovoltaics</span>
+              <span>2024</span>
+              <span>Role: Author</span>
+              <div style="display: flex; gap: 5px; align-items: center;">
+                <span>DOI:</span>
+                <a href="https://doi.org/10.1109/JPHOTOV.2024.3366710" style="color: hsl(27, 65%, 52%); text-decoration: none;">10.1109/JPHOTOV.2024.3366710</a>
+              </div>
+        
+              <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+              <div class="detailed-text" style="display:none;">
+                  <ul class="custom-list">
+                    <p class="timeline-text">This study presents a TCAD-based simulation and modeling of the dark current-voltage (I-V) characteristics in high-periodicity InGaN/GaN multiple-quantum-well (MQW) solar cells. The analysis focuses on identifying the key physical mechanisms governing the device's electrical behavior in the absence of illumination. The results provide insights into charge carrier transport, recombination processes, and leakage currents, which are crucial for optimizing MQW solar cell performance.
+                    </p>
+                  </ul>
+              </div>
+        
+            </li>
+          </ol>
+          <br>
+        
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">V-Pits and Trench-Like Defects in High Periodicity MQWs GaN-Based Solar Cells: Extensive Electro-Optical Analysis</h4>
+              <span>IEEE Transactions on Electron Devices</span>
+              <span>2024</span>
+              <span>Role: Author</span>
+              <div style="display: flex; gap: 5px; align-items: center;">
+                <span>DOI:</span>
+                <a href="https://doi.org/10.1109/TED.2024.3353711" style="color: hsl(27, 65%, 52%); text-decoration: none;">10.1109/TED.2024.3353711</a>
+              </div>
+        
+              <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+              <div class="detailed-text" style="display:none;">
+                  <ul class="custom-list">
+                    <p class="timeline-text">This study provides a comprehensive electro-optical analysis of V-pits and trench-like defects in high-periodicity InGaN/GaN multiple-quantum-well (MQW) solar cells. These extended defects can significantly impact the device's electrical and optical performance by altering charge transport and recombination mechanisms. Through detailed characterization, the study elucidates the degradation effects induced by such structural imperfections, offering critical insights for optimizing the design and fabrication of GaN-based solar cells.
+                    </p>
+                  </ul>
+              </div>
+        
+            </li>
+          </ol>
+          <br>
+        
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Influence of V-Pits on the Turn-On Voltage of GaN-Based High Periodicity Multiple Quantum Well Solar Cells</h4>
+              <span>IEEE Journal of Photovoltaics</span>
+              <span>2023</span>
+              <span>Role: Author</span>
+              <div style="display: flex; gap: 5px; align-items: center;">
+                <span>DOI:</span>
+                <a href="https://doi.org/10.1109/JPHOTOV.2023.3311891" style="color: hsl(27, 65%, 52%); text-decoration: none;">10.1109/JPHOTOV.2023.3311891</a>
+              </div>
+        
+              <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+              <div class="detailed-text" style="display:none;">
+                  <ul class="custom-list">
+                    <p class="timeline-text">This study explores the structural and electrical impact of V-Pits on GaN-based high-periodicity MQW solar cells. By integrating scanning electron microscopy (SEM), atomic force microscopy (AFM), and photoluminescence (PL) spectroscopy, the work demonstrates how V-Pits influence carrier injection efficiency and turn-on voltage behavior. The research provides valuable insights for optimizing MQW solar cells by engineering nanoscale morphological features to mitigate performance losses.
+                    </p>
+                  </ul>
+              </div>
+        
+            </li>
+          </ol>
+          <br>
+        
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Degradation of GaN-Based Multiple Quantum Wells Solar Cells Under Forward Bias: Investigation Based on Optical Measurements and Steady-State Photocapacitance</h4>
+              <span>IEEE Transactions on Electron Devices</span>
+              <span>2023</span>
+              <span>Role: Co-Author</span>
+              <div style="display: flex; gap: 5px; align-items: center;">
+                <span>DOI:</span>
+                <a href="https://doi.org/10.1109/TED.2023.3272297" style="color: hsl(27, 65%, 52%); text-decoration: none;">10.1109/TED.2023.3272297</a>
+              </div>
+        
+              <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+              <div class="detailed-text" style="display:none;"><ul class="custom-list"><p class="timeline-text">The study investigates the degradation of GaN-based multiple quantum well (MQW) solar cells under forward bias stress. It utilizes steady-state photocapacitance (SSPC), photoluminescence (PL), and electroluminescence (EL) measurements to examine defect generation and carrier trapping mechanisms. The research provides a detailed analysis of charge trapping dynamics and the effects of electric field redistribution, enhancing the understanding of the long-term reliability of GaN-based photovoltaic devices.
+              </p></ul></div>
+            </li>
+          </ol>
+          <br>   
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Optically Induced Degradation Due to Thermally Activated Diffusion in GaN-Based InGaN/GaN MQW Solar Cells</h4>
+              <span>IEEE Transactions on Electron Devices</span>
+              <span>2023</span>
+              <span>Role: Author</span>
+              <div style="display: flex; gap: 5px; align-items: center;">
+                <span>DOI:</span>
+                <a href="https://doi.org/10.1109/TED.2023.3236915" style="color: hsl(27, 65%, 52%); text-decoration: none;">10.1109/TED.2023.3236915</a>
+              </div>
+        
+              <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+              <div class="detailed-text" style="display:none;">
+                  <ul class="custom-list">
+                    <p class="timeline-text">This paper investigates thermally activated diffusion processes as a key factor in the optically induced degradation of GaN-based InGaN/GaN MQW solar cells. The study combines temperature-dependent electroluminescence (EL) and deep-level transient spectroscopy (DLTS) to track defect migration and charge carrier recombination changes. The results provide critical insights into diffusion-driven degradation pathways, enabling the development of more robust device architectures for high-efficiency solar applications.
+                    </p>
+                  </ul>
+              </div>
+        
+            </li>
+          </ol>
+          <br>
+        
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Quantum efficiency of InGaN-GaN multi quantum well solar cells: Experimental characterization and modeling</h4>
+              <span>Journal of Applied Physics</span>
+              <span>2022</span>
+              <span>Role: Co-Author</span>
+              <div style="display: flex; gap: 5px; align-items: center;">
+                <span>DOI:</span>
+                <a href="https://doi.org/10.1063/5.0076833" style="color: hsl(27, 65%, 52%); text-decoration: none;">10.1063/5.0076833</a>
+              </div>
+        
+              <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+              <div class="detailed-text" style="display:none;">
+                  <ul class="custom-list">
+                    <p class="timeline-text">This study presents an analytical model based on material parameters, quantum confinement effects, and temperature-dependent absorption coefficients to predict the quantum efficiency of InGaN/GaN multi-quantum well (MQW) solar cells. The research integrates numerical simulations and experimental validation using photovoltaic characterization techniques, such as external quantum efficiency (EQE) and spectral response analysis. The model provides a framework for optimizing MQW structures to enhance solar cell performance.</p>
+                  </ul>
+              </div>
+            </li>
+          </ol>
+          <br>
+        
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Role of p-GaN layer thickness in the degradation of InGaN-GaN MQW solar cells under 405 nm laser excitation</h4>
+              <span>Microelectronics Reliability</span>
+              <span>2022</span>
+              <span>Role: Author</span>
+              <div style="display: flex; gap: 5px; align-items: center;">
+                <span>DOI:</span>
+                <a href="https://doi.org/10.1016/j.microrel.2022.114727" style="color: hsl(27, 65%, 52%); text-decoration: none;">10.1016/j.microrel.2022.114727</a>
+              </div>
+        
+              <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+              <div class="detailed-text" style="display:none;">
+                  <ul class="custom-list">
+                    <p class="timeline-text">This work investigates the influence of p-GaN layer thickness on the degradation mechanisms of InGaN/GaN MQW solar cells under 405 nm laser excitation. Using accelerated stress testing, electroluminescence (EL), photoluminescence (PL), and current-voltage (I-V) characterization, the study demonstrates how thinner p-GaN layers are more prone to performance degradation. The research highlights carrier transport limitations, defect formation, and efficiency losses, providing key insights for designing more reliable GaN-based photovoltaics.</p>
+                  </ul>
+              </div>
+            </li>
+          </ol>
+          <br>
+        
+ 
+
+          </div>
+
+
+
+          <button class="btn-approfondisci" onclick="toggleContent1()"><h4 class="h4">International Conferences</h4></button>
+          <div id="content1" style="display: none;">
+          <br>
+        
+          <ol class="timeline-list">
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Influence of V-pits on the electro-optical properties of high-periodicity InGaN MQWs</h4>
+                <span>SPIE Photonics West 2024, Gallium Nitride Materials and Devices XVII</span>
+                <span>San Francisco, California, USA</span>
+                <span>2024</span>
+                <span>Role: Author</span>
+                <div style="display: flex; gap: 5px; align-items: center;">
+                    <span>DOI:</span>
+                    <a href="https://doi.org/10.1117/12.3004922" style="color: hsl(27, 65%, 52%); text-decoration: none;">10.1117/12.3004922</a>
+                </div>
+                <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+                <div class="detailed-text" style="display:none;">
+                    <ul class="custom-list">
+                        <p class="timeline-text">This study investigates the influence of V-pits on the electro-optical properties of high-periodicity InGaN multiple quantum wells (MQWs). The research explores how these structural defects impact carrier recombination, light emission efficiency, and overall device performance. The findings provide valuable insights for optimizing InGaN MQW designs in optoelectronic applications.</p>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+        <br>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">GaN-based solar cells degradation kinetics investigated at high temperature under high-intensity 405 nm optical stress</h4>
+                <span>SPIE Photonics West 2022, Gallium Nitride Materials and Devices XVII</span>
+                <span>San Francisco, California, USA</span>
+                <span>2023</span>
+                <span>Role: Co-Author</span>
+                <div style="display: flex; gap: 5px; align-items: center;">
+                    <span>DOI:</span>
+                    <a href="https://doi.org/10.1117/12.2608680" style="color: hsl(27, 65%, 52%); text-decoration: none;">10.1117/12.2608680</a>
+                </div>
+                <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+                <div class="detailed-text" style="display:none;">
+                    <ul class="custom-list">
+                        <p class="timeline-text">This study investigates the degradation kinetics of GaN-based solar cells under high-intensity 405 nm optical stress at elevated temperatures. The work provides insights into defect generation, charge trapping mechanisms, and the long-term stability of the devices, which are critical for optimizing GaN-based photovoltaic applications.</p>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+        <br>
+
+        <ol class="timeline-list">
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Experimental analysis of degradation of multi-quantum well GaN based solar cells under current stress</h4>
+              <span>SPIE Photonics West 2023, Gallium Nitride Materials and Devices XVII</span>
+              <span>San Francisco, California, USA</span>
+              <span>2023</span>
+              <span>Role: Co-Author</span>
+              <div style="display: flex; gap: 5px; align-items: center;">
+                  <span>DOI:</span>
+                  <a href="https://doi.org/10.1117/12.2653129" style="color: hsl(27, 65%, 52%); text-decoration: none;">10.1117/12.2653129</a>
+              </div>
+              <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+              <div class="detailed-text" style="display:none;">
+                  <ul class="custom-list">
+                      <p class="timeline-text">This paper investigates the degradation of GaN-based MQW solar cells under electrical stress. The experimental results reveal critical degradation pathways affecting device efficiency and lifetime, guiding future reliability improvements.</p>
+                  </ul>
+              </div>
+          </li>
+      </ol>
+      <br>
+      
+      <ol class="timeline-list">
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Degradation of GaN-based InGaN-GaN MQWs solar cells caused by thermally-activated diffusion</h4>
+              <span>SPIE Photonics West 2023, Gallium Nitride Materials and Devices XVII</span>
+              <span>San Francisco, California, USA</span>
+              <span>2023</span>
+              <span>Role: Author</span>
+              <div style="display: flex; gap: 5px; align-items: center;">
+                  <span>DOI:</span>
+                  <a href="https://doi.org/10.1117/12.2653110" style="color: hsl(27, 65%, 52%); text-decoration: none;">10.1117/12.2653110</a>
+              </div>
+              <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+              <div class="detailed-text" style="display:none;">
+                  <ul class="custom-list">
+                      <p class="timeline-text">This work analyzes the role of thermally-activated diffusion mechanisms in the degradation of GaN-based MQW solar cells. The study discusses defect formation, charge trapping, and performance loss under high-temperature operation.</p>
+                  </ul>
+              </div>
+          </li>
+      </ol>
+      <br>
+
+        <ol class="timeline-list">
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Hail damage investigation in heterojunction silicon photovoltaic modules: a real-world case study</h4>
+              <span>ESREF: 35th European Symposium on Reliability of Electron Devices, Failure Physics and Analysis</span>
+              <span>Parma, Italy</span>
+              <span>2024</span>
+              <span>Role: Author</span>
+              <div style="display: flex; gap: 5px; align-items: center;">
+                  <span>Reference:</span>
+                  <span>Proceedings of ESREF 2024</span>
+              </div>
+              <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+              <div class="detailed-text" style="display:none;">
+                  <ul class="custom-list">
+                      <p class="timeline-text">This study presents a real-world analysis of hail damage in heterojunction silicon photovoltaic (PV) modules. By utilizing infrared (IR) imaging and electroluminescence (EL) techniques, the research evaluates the impact of hail-induced defects on module efficiency and reliability. The findings contribute to improving durability standards and predictive maintenance strategies for PV installations in extreme weather conditions.</p>
+                  </ul>
+              </div>
+          </li>
+      </ol>
+      <br>
+        
+        <ol class="timeline-list">
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Characterization and modelling of quantum efficiency InGaN-GaN multi-quantum well (MQW) solar cells</h4>
+                <span>WOCSDICE-EXMATEC 2022, 45th Conference</span>
+                <span>Ponta Delgada, Azores, Portugal</span>
+                <span>2022</span>
+                <span>Role: Author</span>
+                <div style="display: flex; gap: 5px; align-items: center;">
+                    <span>Reference:</span>
+                    <span>Proceedings of WOCSDICE-EXMATEC 2022</span>
+                </div>
+                <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+                <div class="detailed-text" style="display:none;">
+                    <ul class="custom-list">
+                        <p class="timeline-text">This work presents an in-depth characterization and modeling approach for the quantum efficiency of InGaN-GaN MQW solar cells. The study analyzes the impact of structural parameters on carrier collection efficiency, providing valuable insights into the design optimization of GaN-based photovoltaics.</p>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+        <br>
+        
+        <ol class="timeline-list">
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">InGaN/GaN Multiple Quantum Wells solar cells: a trade-off in p-GaN thickness, to optimize reliability and quantum efficiency</h4>
+                <span>WOCSDICE-EXMATEC 2023, 46th Conference</span>
+                <span>Palermo, Sicily, Italy</span>
+                <span>2023</span>
+                <span>Role: Author</span>
+                <div style="display: flex; gap: 5px; align-items: center;">
+                    <span>Reference:</span>
+                    <span>Proceedings of WOCSDICE-EXMATEC 2023</span>
+                </div>
+                <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+                <div class="detailed-text" style="display:none;">
+                    <ul class="custom-list">
+                        <p class="timeline-text">The study explores the influence of p-GaN thickness on the trade-off between quantum efficiency and reliability in InGaN/GaN MQW solar cells. Experimental and simulation data highlight the impact of p-GaN thickness on carrier transport, recombination rates, and long-term device performance.</p>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+        <br>
+        
+        <ol class="timeline-list">
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Role of Extended Defects in the Electro-Optical Properties of GaN-based InGaN/GaN MQWs Solar Cells for Photovoltaic Applications</h4>
+              <span>Seconda Conferenza della Rete Italiana Fotovoltaico per la Ricerca e l'Innovazione (Rete IFV)</span>
+              <span>Bolzano, NOI Techpark / Eurac Research</span>
+              <span>11 – 12 June 2024</span>
+              <span>Role: Author</span>
+              <div style="display: flex; gap: 5px; align-items: center;">
+                  <span>Reference:</span>
+                  <span>Proceedings of the Second Italian Photovoltaic Network Conference (Rete IFV) 2024</span>
+              </div>
+              <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+              <div class="detailed-text" style="display:none;">
+                  <ul class="custom-list">
+                      <p class="timeline-text">This work investigates the role of extended defects in the electro-optical properties of GaN-based InGaN/GaN multiple quantum well (MQW) solar cells. Through photoluminescence (PL) and electroluminescence (EL) analysis, the study explores how structural imperfections affect carrier dynamics and quantum efficiency. The results provide insights into defect engineering strategies to enhance the performance and reliability of GaN-based solar cells for next-generation photovoltaic applications.</p>
+                  </ul>
+              </div>
+          </li>
+      </ol>
+      <br>
+
+        <ol class="timeline-list">
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">GaN-based InGaN/GaN MQWs solar cells for innovative applications: performance and modeling</h4>
+                <span>Prima Conferenza Nazionale della Rete Italiana Fotovoltaico per la Ricerca e l'Innovazione (Rete IFV)</span>
+                <span>Italy</span>
+                <span>2023</span>
+                <span>Role: Author</span>
+                <div style="display: flex; gap: 5px; align-items: center;">
+                  <span>Reference:</span>
+                  <span>Proceedings of the First Italian Photovoltaic Network Conference (Rete IFV) 2023</span>
+              </div>
+                <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+                <div class="detailed-text" style="display:none;">
+                    <ul class="custom-list">
+                        <p class="timeline-text">This work presents the performance characterization and modeling of GaN-based InGaN/GaN MQW solar cells for next-generation photovoltaic applications. The study emphasizes the impact of structural optimizations on power conversion efficiency and device robustness.</p>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+        <br>
+        
+        
+        <ol class="timeline-list">
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Modeling the EQE spectral shape of InGaN-GaN Multi-Quantum Wells Solar Cells</h4>
+                <span>International Workshop on Nitride Semiconductors 2022</span>
+                <span>2022</span>
+                <span>Role: Co-Author</span>
+                <div style="display: flex; gap: 5px; align-items: center;">
+                  <span>Reference:</span>
+                  <span>Proceedings of International Workshop on Nitride Semiconductors 2022</span>
+              </div>
+                <button class="btn-approfondisci" onclick="toggleDetails()">Abstract summary</button>
+                <div class="detailed-text" style="display:none;">
+                    <ul class="custom-list">
+                        <p class="timeline-text">This paper presents an advanced modeling approach to predict the external quantum efficiency (EQE) spectral response of InGaN-GaN MQW solar cells, addressing critical factors influencing light absorption and carrier collection.</p>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+        <br>
+          </div>
+          <br>
+        
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="earth-outline"></ion-icon>
+          </div>
+          <h3 class="h3">CONFERENCES</h3>
+        </div>              
+
+        <button class="btn-approfondisci" onclick="toggleContent2()"><h4 class="h4">Conferences list</h4></button>
+        <div id="content2" style="display: none;">
+        <br>
+      
+        <ol class="timeline-list">
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">ESREF 2024</h4>
+              <span>Parma, Italy</span>
+              <span>2024</span>
+              <span>Role: Oral Presentation</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Rete IFV 2024</h4>
+              <span>Bolzano, Italy</span>
+              <span>2024</span>
+              <span>Role: Poster Presentation</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">GaN Marathon 2024</h4>
+              <span>Verona, Italy</span>
+              <span>2024</span>
+              <span>Role: Staff + Poster Presentation</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Photonics West 2024</h4>
+              <span>San Francisco, USA</span>
+              <span>2024</span>
+              <span>Role: Oral Presentation</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Rete IFV 2023</h4>
+              <span>Milano, Italy</span>
+              <span>2023</span>
+              <span>Role: Oral Presentation</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">WOCSDICE-EXMATEC 2023</h4>
+              <span>Palermo, Italy</span>
+              <span>2023</span>
+              <span>Role: Oral Presentation</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Photonics West 2023</h4>
+              <span>San Francisco, USA</span>
+              <span>2023</span>
+              <span>Role: Oral Presentation</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">ESREF 2022</h4>
+              <span>Berlin, Germany</span>
+              <span>2022</span>
+              <span>Role: Oral Presentation</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Summer School of Information Engineering (SSIE) 2022</h4>
+              <span>Brixen, Italy</span>
+              <span>2022</span>
+              <span>Role: Oral Presentation</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">GaN Marathon 2022</h4>
+              <span>Venice, Italy</span>
+              <span>2022</span>
+              <span>Role: Staff</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">WOCSDICE-EXMATEC 2022</h4>
+              <span>Ponta Delgada (Sao Miguel Island – Azores), Portugal</span>
+              <span>2022</span>
+              <span>Role: Oral Presentation</span>
+          </li>
+      </ol>
+      <br>
+        </div>
+        <br>
+
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="school-outline"></ion-icon>
+          </div>
+          <h3 class="h3">SEMINARS</h3>
+        </div>              
+
+        <button class="btn-approfondisci" onclick="toggleContent3()"><h4 class="h4">Seminar List</h4></button>
+        <div id="content3" style="display: none;">
+        <br>
+      
+        <ol class="timeline-list">
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">“China, the U.S. and the age of technology war”</h4>
+              <span>UNIPD</span>
+              <span>08/08/2023</span>
+              <span>Speaker: Alessandro Aresu</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">“Personalize and context aware nudging”</h4>
+              <span>UNIPD</span>
+              <span>26/01/2023</span>
+              <span>Speaker: Randi Karlsen</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">“De-risking investments in medical innovation”</h4>
+              <span>UNIPD</span>
+              <span>30/09/2022</span>
+              <span>Speaker: Luigi Negri</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">“Growth and analysis of AlGaN based UV-LEDs”</h4>
+              <span>UNIPD</span>
+              <span>06/09/2022</span>
+              <span>Speaker: Tim Wernicke</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">“Learning Local Volt/Var Controllers with Stability Guarantees”</h4>
+              <span>UNIPD</span>
+              <span>30/06/2022</span>
+              <span>Speaker: Guido Cavraro</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">“Building a Research Career: A Success Story”</h4>
+              <span>UNIPD</span>
+              <span>20/05/2022</span>
+              <span>Speaker: Fabrizio Nestola</span>
+          </li>
+      
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">“Gallium Oxide deep UV photodetectors”</h4>
+              <span>UNIPD</span>
+              <span>23/05/2022</span>
+              <span>Speaker: Lucile Conan</span>
+          </li>
+      </ol>
+        <br>
+        </div>
+
+          
+        
+        </section>
+
+      </article>
+
+      <article>
+
+
+
+        
+
+
+        
+        <section class="projects">
+
+          <ul class="filter-list">
+
+          <!--
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+          -->
+
+          <!--
+            <li class="filter-item">
+              <button data-filter-btn>Conference Papers</button>
+            </li>
+          -->
+
+          <!--
+            <li class="filter-item">
+              <button data-filter-btn>Journal Papers</button>
+            </li>
+          -->
+
+          <!--
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+          -->            
+
+          </ul>
+
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+            <!--
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+            -->
+
+            <!--
+              <li class="select-item">
+                <button data-select-item>Conference Papers</button>
+              </li>
+            -->
+
+            <!--
+              <li class="select-item">
+                <button data-select-item>Journal Papers</button>
+              </li>
+            -->
+
+            <!--
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+            -->
+              
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <!--
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">BARON: Base Station Authentication Through Core Network for Modbility management in 5G Networks</h3>
+
+                <p class="project-category">WiSec '23</p>
+
+              </a>
+            </li>
+            -->
+
+            <!--
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            -->
+
+            <!--
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+            -->
+
+            <!--
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+            -->
+
+            <!--
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+            -->
+
+            <!--
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+            -->
+
+            <!--
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            -->
+
+            <!--
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+            -->
+
+            <!--
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+            -->
+
+          </ul>
+
+        </section>
+      
+
+      </article>
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <!--
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+          -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89636.35578482872!2d11.808844348952508!3d45.40659465010034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1740843262951!5m2!1sit!2sit" width="400" height="300" loading="lazy"></iframe>
+          </figure>
+          <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
