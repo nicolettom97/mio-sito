@@ -1896,6 +1896,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar {
     position: sticky;
     top: 60px;
+    min-height: auto;
     max-height: max-content;
     height: 100%;
     margin-bottom: 0;
@@ -1905,7 +1906,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
-  .avatar-box img { width: auto; height: auto; border-radius: 5px;}
+  .avatar-box img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+  }
 
   .info-content .name {
     white-space: nowrap;
