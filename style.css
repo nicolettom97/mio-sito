@@ -1896,6 +1896,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar {
     position: sticky;
     top: 60px;
+    min-height: auto;
     max-height: max-content;
     height: 100%;
     margin-bottom: 0;
