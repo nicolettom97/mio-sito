@@ -1429,7 +1429,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  
+  .avatar-box {  
+    display: flex;  
+    border-radius: 30px; 
+    justify-content: center;  
+    align-items: center;  
+    width: 100%;  
+    max-width: 200px; /* Limita la dimensione dell'immagine */
+    margin: 0 auto 10px auto; /* Centra l'immagine e aggiunge spazio sotto */
+  }
 
   .avatar-box img { width: auto; height: auto; }
 
@@ -1441,6 +1450,14 @@ textarea.form-input::-webkit-resizer { display: none; }
     top: -30px;
     right: -30px;
     padding: 10px 15px;
+  }
+
+  .contact-item {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    margin-bottom: 10px;  
   }
 
   .info_more-btn span {
