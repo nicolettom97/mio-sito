@@ -572,7 +572,7 @@ main {
   display: grid;
   /*grid-template-columns: 1fr;*/
   gap: 20px; 
-  width: 100%;
+  width: auto;
 }
 
 .service-item2 { /*sistemare in modo che non sfori sul telefono e che ripeto tutti i passi per il contenitore precedente*/
