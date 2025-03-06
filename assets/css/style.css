@@ -575,6 +575,30 @@ main {
   width: 1700px;
 }
 
+.service-item2 { /*sistemare in modo che non sfori sul telefono e che ripeto tutti i passi per il contenitore precedente*/
+  max-width: 100%; /* Non supera la larghezza del contenitore */
+  width: auto; /* Si adatta automaticamente */
+  box-sizing: border-box; /* Evita problemi di dimensione con il padding */
+  overflow: hidden; /* Evita che il contenuto trabocchi */
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.service-item2::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  width: auto; /* Assicura che l'elemento occupi tutta la larghezza del contenitore */
+  box-sizing: border-box; /* Impedisce che padding e bordi influenzino la larghezza */
+}
+
 .service-item {
   position: relative;
   background: var(--border-gradient-onyx);
