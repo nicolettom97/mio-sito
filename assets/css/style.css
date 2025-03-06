@@ -369,7 +369,7 @@ main {
 .sidebar {
   margin-bottom: 15px;
   max-height: 112px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   transition: var(--transition-2);
 }
 
@@ -572,7 +572,7 @@ main {
   display: grid;
   /*grid-template-columns: 1fr;*/
   gap: 20px; 
-  width: 1700px;
+  width: 100%;
 }
 
 .service-item2 { /*sistemare in modo che non sfori sul telefono e che ripeto tutti i passi per il contenitore precedente*/
@@ -1820,7 +1820,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* service */
 
   .service-list {
-    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr;*/
     gap: 20px 25px;
   }
 
