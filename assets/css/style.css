@@ -173,6 +173,7 @@ article {
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
+  max-height: none; /* Rimuove eventuali limiti di altezza */
 }
 
 .separator {
@@ -368,9 +369,10 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: auto;
+  max-height: none; /* Rimuove eventuali limiti di altezza */
   overflow: hidden;
   transition: var(--transition-2);
+  
 }
 
 .sidebar.active { max-height: auto; }
@@ -441,7 +443,9 @@ main {
 .sidebar-info_more {
   opacity: 0;
   transition: var(--transition-2);
-}
+  max-height: 0;  /* Inizialmente collassato */
+  overflow: hidden;
+  }
 
 .sidebar.active .sidebar-info_more {
   opacity: 1;
@@ -1391,6 +1395,8 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 30px;
   }
 
+  
+
 
   
   .article-title {
@@ -2000,7 +2006,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar-info_more {
     opacity: 1;
     visibility: visible;
-  }
+    max-height: 0;  /* Inizialmente collassato */
+    overflow: hidden;
+    }
 
   .contacts-list { grid-template-columns: 1fr; }
 
