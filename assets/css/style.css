@@ -165,7 +165,6 @@ body { background: var(--smoky-black); }
   #REUSED STYLE
 \*-----------------------------------*/
 
-/* CSS esistente che hai condiviso */
 .sidebar,
 article {
   background: var(--eerie-black-2);
@@ -208,58 +207,6 @@ article {
 }
 
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
-
-/* Nuovi stili per risolvere il problema su mobile */
-.sidebar {
-  width: 100%;
-  max-width: 100%;
-  overflow: visible; /* Assicura che il contenuto non venga tagliato */
-  height: auto; /* Permette al contenitore di espandersi in base al contenuto */
-}
-
-.sidebar-info_more {
-  width: 100%;
-  max-height: none; /* Rimuove eventuali limiti di altezza */
-  overflow: visible; /* Assicura che il contenuto non venga tagliato */
-}
-
-/* Stili responsive per dispositivi mobili */
-@media (max-width: 768px) {
-  .sidebar {
-    position: relative; /* Assicura un corretto posizionamento */
-    height: auto;
-    overflow: visible;
-    transform: none !important; /* Previene eventuali transform che potrebbero causare problemi */
-  }
-  
-  .sidebar-info_more {
-    max-height: none;
-    overflow: visible;
-    height: auto;
-    transition: all 0.5s ease; /* Aggiunge una transizione fluida quando si espande */
-  }
-  
-  .sidebar-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .avatar-box img {
-    max-width: 200px; /* Dimensione immagine ridotta per mobile */
-  }
-  
-  .contacts-list, .social-list {
-    width: 100%;
-  }
-  
-  .contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-}
-
 
 article { display: none; }
 
@@ -493,7 +440,6 @@ main {
 
 .sidebar-info_more {
   opacity: 0;
-  /*visibility: hidden;*/
   transition: var(--transition-2);
 }
 
