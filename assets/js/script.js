@@ -205,4 +205,12 @@ function toggleContent3() {
   }
 }
 
+function toggleContentContacts() {
+  var content = document.getElementById("content3C");
+  if (content.style.display === "none") {
+      content.style.display = "block";
+  } else {
+      content.style.display = "none";
+  }
+}
 
