@@ -442,15 +442,17 @@ main {
 
 .sidebar-info_more {
   opacity: 0;
-  transition: var(--transition-2);
-  max-height: 0;  /* Inizialmente collassato */
+  visibility: hidden;
+  max-height: 0;
   overflow: hidden;
-  }
+  transition: opacity 0.5s ease, visibility 0.5s ease, max-height 0.5s ease;
+}
 
 .sidebar.active .sidebar-info_more {
   opacity: 1;
   visibility: visible;
-  max-height: auto;
+  max-height: 1000px;
+  overflow: visible;
 }
 
 .contacts-list {
@@ -1337,12 +1339,21 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .clients-item { min-width: calc(33.33% - 10px); }
 
-  .sidebar.active .sidebar-info_more {
-    /*display: block;*/
-    height: auto;
-    overflow: visible;
-    max-height: 1000px; /* Un valore alto per assicurare che tutto il contenuto sia visibile */
+  .sidebar-info_more {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
   }
+  
+  .sidebar.active .sidebar-info_more {
+    opacity: 1;
+    visibility: visible;
+    max-height: 1000px;
+    overflow: visible;
+  }
+
 
   /**
    * #PORTFOLIO, BLOG 
@@ -1442,12 +1453,21 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar.active { max-height: auto; }
 
-  .sidebar.active .sidebar-info_more {
-    /*display: block;*/
-    height: auto;
-    overflow: visible;
-    max-height: 1000px; /* Un valore alto per assicurare che tutto il contenuto sia visibile */
+  .sidebar-info_more {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
   }
+  
+  .sidebar.active .sidebar-info_more {
+    opacity: 1;
+    visibility: visible;
+    max-height: 1000px;
+    overflow: visible;
+  
+}
 
   .sidebar-info { gap: 25px; }
 
@@ -1692,13 +1712,21 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
-  .sidebar.active .sidebar-info_more {
-    /*display: block;*/
-    height: auto;
-    overflow: visible;
-    max-height: 1000px; /* Un valore alto per assicurare che tutto il contenuto sia visibile */
+  .sidebar-info_more {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
   }
-
+  
+  .sidebar.active .sidebar-info_more {
+    opacity: 1;
+    visibility: visible;
+    max-height: 1000px;
+    overflow: visible;
+  
+}
   /**
    * SIDEBAR
    */
@@ -1855,12 +1883,21 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar-link { font-weight: var(--fw-500); }
 
-  .sidebar.active .sidebar-info_more {
-    /*display: block;*/
-    height: auto;
-    overflow: visible;
-    max-height: 1000px; /* Un valore alto per assicurare che tutto il contenuto sia visibile */
+  .sidebar-info_more {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
   }
+  
+  .sidebar.active .sidebar-info_more {
+    opacity: 1;
+    visibility: visible;
+    max-height: 1000px;
+    overflow: visible;
+  
+}
 
   /**
    * ABOUT
@@ -1939,12 +1976,21 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   article { min-height: 100%; }
 
-  .sidebar.active .sidebar-info_more {
-    /*display: block;*/
-    height: auto;
-    overflow: visible;
-    max-height: 1000px; /* Un valore alto per assicurare che tutto il contenuto sia visibile */
+  .sidebar-info_more {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
   }
+  
+  .sidebar.active .sidebar-info_more {
+    opacity: 1;
+    visibility: visible;
+    max-height: 1000px;
+    overflow: visible;
+  
+}
 
   /**
    * MAIN
@@ -2003,12 +2049,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .info_more-btn { display: none; }
 
-  .sidebar-info_more {
-    opacity: 1;
-    visibility: visible;
-    max-height: 0;  /* Inizialmente collassato */
-    overflow: hidden;
-    }
 
   .contacts-list { grid-template-columns: 1fr; }
 
