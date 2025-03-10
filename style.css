@@ -1334,7 +1334,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .clients-item { min-width: calc(33.33% - 10px); }
 
   .sidebar.active .sidebar-info_more {
-    display: block;
+    /*display: block;*/
     height: auto;
     overflow: visible;
     max-height: 1000px; /* Un valore alto per assicurare che tutto il contenuto sia visibile */
@@ -1437,7 +1437,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar.active { max-height: auto; }
 
   .sidebar.active .sidebar-info_more {
-    display: block;
+    /*display: block;*/
     height: auto;
     overflow: visible;
     max-height: 1000px; /* Un valore alto per assicurare che tutto il contenuto sia visibile */
@@ -1687,7 +1687,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
   .sidebar.active .sidebar-info_more {
-    display: block;
+    /*display: block;*/
     height: auto;
     overflow: visible;
     max-height: 1000px; /* Un valore alto per assicurare che tutto il contenuto sia visibile */
@@ -1850,7 +1850,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .navbar-link { font-weight: var(--fw-500); }
 
   .sidebar.active .sidebar-info_more {
-    display: block;
+    /*display: block;*/
     height: auto;
     overflow: visible;
     max-height: 1000px; /* Un valore alto per assicurare che tutto il contenuto sia visibile */
@@ -1934,7 +1934,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   article { min-height: 100%; }
 
   .sidebar.active .sidebar-info_more {
-    display: block;
+    /*display: block;*/
     height: auto;
     overflow: visible;
     max-height: 1000px; /* Un valore alto per assicurare che tutto il contenuto sia visibile */
