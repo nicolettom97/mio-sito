@@ -420,7 +420,15 @@ main {
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
   z-index: 1;
+  min-width: 150px; /* Imposta una larghezza minima */
+  text-align: center; /* Centra il testo */
+  display: flex; /* Usa flexbox per allineare meglio gli elementi interni */
+  align-items: center; /* Allinea verticalmente gli elementi */
+  justify-content: center; /* Centra orizzontalmente gli elementi */
+  gap: 8px; /* Spazio tra il testo e l'icona */
 }
+
+
 
 .info_more-btn::before {
   content: "";
@@ -438,14 +446,23 @@ main {
 .info_more-btn:hover::before,
 .info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
 
-.info_more-btn span { display: none; }
+/* Assicurati che il testo sia visibile */
+.info_more-btn span {
+  display: inline;
+  font-weight: 500; /* Rende il testo un po' più bold */
+}
+
+/* Rendi l'icona un po' più grande */
+.info_more-btn ion-icon {
+  font-size: 18px; /* Aumenta la dimensione dell'icona */
+}
 
 .sidebar-info_more {
+  width: 100%;
   opacity: 0;
   visibility: hidden;
   max-height: 0;
   overflow: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease, max-height 0.5s ease;
 }
 
 .sidebar.active .sidebar-info_more {
