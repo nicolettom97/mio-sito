@@ -260,13 +260,6 @@ article {
   }
 }
 
-/* Stile per quando il pulsante "Show Contacts" è attivo */
-.sidebar.active .sidebar-info_more {
-  display: block;
-  height: auto;
-  overflow: visible;
-  max-height: 1000px; /* Un valore alto per assicurare che tutto il contenuto sia visibile */
-}
 
 article { display: none; }
 
