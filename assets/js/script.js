@@ -204,3 +204,27 @@ function toggleContent3() {
       content.style.display = "none";
   }
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const sidebarBtn = document.querySelector('[data-sidebar-btn]');
+  const sidebar = document.querySelector('[data-sidebar]');
+  
+  if (sidebarBtn && sidebar) {
+    sidebarBtn.addEventListener('click', function() {
+      sidebar.classList.toggle('active');
+      
+      // Cambia il testo del pulsante in base allo stato
+      const buttonSpan = this.querySelector('span');
+      if (buttonSpan) {
+        buttonSpan.textContent = sidebar.classList.contains('active') ? 'Hide Contacts' : 'Show Contacts';
+      }
+      
+      // Ruota l'icona quando è attivo
+      const buttonIcon = this.querySelector('ion-icon');
+      if (buttonIcon) {
+        buttonIcon.style.transform = sidebar.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+      }
+    });
+  }
+});
