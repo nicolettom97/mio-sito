@@ -446,6 +446,7 @@ main {
 .sidebar.active .sidebar-info_more {
   opacity: 1;
   visibility: visible;
+  max-height: auto;
 }
 
 .contacts-list {
@@ -1420,11 +1421,11 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar {
-    max-height: 180px;
+    max-height: auto;
     margin-bottom: 30px;
   }
 
-  .sidebar.active { max-height: 584px; }
+  .sidebar.active { max-height: auto; }
 
   .sidebar-info { gap: 25px; }
 
