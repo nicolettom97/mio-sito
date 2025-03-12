@@ -1380,6 +1380,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     overflow: visible;
   }
 
+  .social-list { justify-content: center; }
 
   /**
    * #PORTFOLIO, BLOG 
@@ -1711,6 +1712,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   textarea.form-input { margin-bottom: 30px; }
 
+  .social-list { justify-content: center; }
+
   .form-btn {
     --fs-6: 16px;
     padding: 16px 20px;
@@ -1819,7 +1822,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
 
-
+  .social-list { justify-content: center; }
   /**
    * CONTACT
    */
@@ -1952,7 +1955,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-list { grid-template-columns: repeat(3, 1fr); }
 
-
+  .social-list { justify-content: center; }
 
   /**
    * BLOG
