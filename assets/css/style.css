@@ -495,11 +495,20 @@ main {
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
-}
+  max-width: 100%; 
+  display: block;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all; /* Permette alla parola di spezzarsi */
+  }
 
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-7);
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+  white-space: normal; /* Permette il ritorno a capo */
+  display: block; /* Fa sì che l'email occupi tutta la riga */
 }
 
 .contact-info address { font-style: normal; }
@@ -2073,11 +2082,19 @@ textarea.form-input::-webkit-resizer { display: none; }
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    white-space: normal; /* Permette il ritorno a capo */
+    display: block; /* Fa sì che l'email occupi tutta la riga */
   }
 
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
     font-weight: var(--fw-300);
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    white-space: normal; /* Permette il ritorno a capo */
+    display: block; /* Fa sì che l'email occupi tutta la riga */
   }
 
   .separator:last-of-type {

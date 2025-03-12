@@ -46,64 +46,41 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box" style="border-radius: 5px;">
-          <img src="./assets/images/MarcoNicoletto.jpg" alt="Marco Nicoletto" width="50">
+          <img src="./assets/images/MarcoNicoletto2.jpg" alt="Marco Nicoletto" width="50">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Marco Nicoletto">Marco Nicoletto</h1>
-
           <p class="title"> Electronic Engineer </p>
         </div>
 
+        <button class="btn-approfondisci" onclick="toggleContatti()">Show Contacts</button>
+          <div id="contattiMarco" style="display: none;">
+
+            <ul class="contacts-list">          
+              <li class="contact-item">
+                <div class="contact-info">
+                  <p class="contact-title">Email</p>
+                  <a href="mailto:nicoletto.marco.0@gmail.com" class="contact-link">nicoletto.marco.0@gmail.com</a>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="https://www.linkedin.com/in/marco-nicoletto-601634217/" class="social-link" target="_blank" title="linkedin">
+                  <!--<ion-icon name="logo-facebook"></ion-icon>-->
+                  <div>
+                    <img src="./assets/images/linkedin.png", width="30">
+                  </div>
+                </a>
+              </li>
+            </ul>
+            </div>
+          </div>
+
       </div>
 
-
-      <div style="text-align: center; margin: 15px 0;">
-        <button class="btn-approfondisci" onclick="toggleContentContacts()" style="margin: 0 auto; display: block; padding: 10px 20px; background-color: var(--eerie-black-2); border: 1px solid var(--jet); border-radius: 10px; cursor: pointer; min-width: 200px;">
-          <h4 class="h4" style="margin: 0;">Show Contacts</h4>
-        </button>
-      </div>
-      <div id="content3C" style="display: none;">
-        <br>
-        <div class="separator"></div>
-        <ul class="contacts-list">          
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:nicoletto.marco.0@gmail.com" class="contact-link">nicoletto.marco.0@gmail.com</a>
-            </div>
-          </li>
-          <!--
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Office 3CD3, Torre Archimede - Padova</address>
-            </div>
-          </li>
-          -->
-        </ul>
-        <div class="separator"></div>
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/marco-nicoletto-601634217/" class="social-link" target="_blank" title="linkedin">
-              <!--<ion-icon name="logo-facebook"></ion-icon>-->
-              <div>
-                <img src="./assets/images/linkedin.png", width="30">
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-        
-
-
-        
 
     </aside>
 
@@ -1630,21 +1607,18 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
-
+          <form action="mailto:nicoletto.marco.0@gmail.com" method="post" enctype="text/plain">
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required>
             </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
+          
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+          
+            <button class="form-btn" type="submit">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
 
         </section>
