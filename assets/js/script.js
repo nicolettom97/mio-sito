@@ -159,32 +159,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const contactForm = document.getElementById("contactForm");
 
-  if (contactForm) {
-    contactForm.addEventListener("submit", function (event) {
-      event.preventDefault(); // Evita il ricaricamento della pagina
-
-      const name = document.getElementById("fullname").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const message = document.getElementById("message").value.trim();
-
-      if (!name || !email || !message) {
-        alert("Please fill in all fields.");
-        return;
-      }
-
-      const mailtoLink = `mailto:nicoletto.marco.0@gmail.com?subject=Message from ${encodeURIComponent(
-        name
-      )}&body=Name: ${encodeURIComponent(name)}%0D%0AEmail: ${encodeURIComponent(
-        email
-      )}%0D%0A%0D%0A${encodeURIComponent(message)}`;
-
-      window.location.href = mailtoLink;
-    });
-  }
-});
 
 function toggleDetails() {
   var details = event.target.nextElementSibling; // Trova il prossimo elemento, che è la sezione dei dettagli
