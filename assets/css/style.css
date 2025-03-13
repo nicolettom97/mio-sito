@@ -473,6 +473,7 @@ main {
 }
 
 .contacts-list {
+  align-items: center;
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
@@ -516,7 +517,7 @@ main {
 .social-list {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  /*align-items: center;*/
   gap: 15px;
   padding-bottom: 4px;
   padding-left: 7px;
