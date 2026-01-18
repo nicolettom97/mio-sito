@@ -398,142 +398,66 @@ main {
   margin-bottom: 10px;
 }
 
-.info-content .title {
-  color: var(--white-1);
-  background: var(--onyx);
-  font-size: var(--fs-8);
-  font-weight: var(--fw-300);
-  width: max-content;
-  padding: 3px 12px;
-  border-radius: 8px;
-}
-
-.info_more-btn {
-  position: absolute;
-  top: -15px;
-  right: -15px;
-  border-radius: 0 15px;
-  font-size: 13px;
-  color: var(--orange-yellow-crayola);
+/* Calendar styles adjustments */
+#calendar-wrapper {
+  margin-top: 12px;
   background: var(--border-gradient-onyx);
   padding: 10px;
-  box-shadow: var(--shadow-2);
-  transition: var(--transition-1);
-  z-index: 1;
-  min-width: 150px; /* Imposta una larghezza minima */
-  text-align: center; /* Centra il testo */
-  display: flex; /* Usa flexbox per allineare meglio gli elementi interni */
-  align-items: center; /* Allinea verticalmente gli elementi */
-  justify-content: center; /* Centra orizzontalmente gli elementi */
-  gap: 8px; /* Spazio tra il testo e l'icona */
+  border-radius: 12px;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-4);
 }
 
-
-
-.info_more-btn::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  border-radius: inherit;
-  background: var(--bg-gradient-jet);
-  transition: var(--transition-1);
-  z-index: -1;
-}
-
-.info_more-btn:hover,
-.info_more-btn:focus { background: var(--bg-gradient-yellow-1); }
-
-.info_more-btn:hover::before,
-.info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
-
-/* Assicurati che il testo sia visibile */
-.info_more-btn span {
-  display: inline;
-  font-weight: 500; /* Rende il testo un po' più bold */
-}
-
-/* Rendi l'icona un po' più grande */
-.info_more-btn ion-icon {
-  font-size: 18px; /* Aumenta la dimensione dell'icona */
-}
-
-.sidebar-info_more {
+/* keep calendar inner background transparent so the wrapper shows through */
+.calendar {
   width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  max-height: 0;
+  background: transparent;
+  border-radius: 8px;
   overflow: hidden;
 }
 
-.sidebar.active .sidebar-info_more {
-  opacity: 1;
-  visibility: visible;
-  max-height: 1000px;
-  overflow: visible;
+/* make the 'today' dot more visible and orange to match site accents */
+.calendar .today .dot {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: var(--orange-yellow-crayola);
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  border: 2px solid rgba(255,255,255,0.03);
 }
 
-.contacts-list {
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
+/* make the sidebar title white as requested */
+.info-content .title { color: var(--white-2); }
 
-.contact-item {
-  min-width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.contact-info {
-  max-width: calc(100% - 46px);
-  width: calc(100% - 46px);
-}
-
-.contact-title {
+/* tighten weekday headers to avoid overlap */
+.calendar thead th {
+  font-size: 11px;
   color: var(--light-gray-70);
-  font-size: var(--fs-8);
-  text-transform: uppercase;
-  margin-bottom: 2px;
-  max-width: 100%; 
-  display: block;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-all; /* Permette alla parola di spezzarsi */
-  }
-
-.contact-info :is(.contact-link, time, address) {
-  color: var(--white-2);
-  font-size: var(--fs-7);
-  word-wrap: break-word; 
-  overflow-wrap: break-word;
-  white-space: normal; /* Permette il ritorno a capo */
-  display: block; /* Fa sì che l'email occupi tutta la riga */
+  padding: 4px 2px;
+  text-transform: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.contact-info address { font-style: normal; }
-
-.social-list {
-  display: flex;
-  justify-content: flex-start;
-  /*align-items: center;*/
-  gap: 15px;
-  padding-bottom: 4px;
-  padding-left: 7px;
+/* small responsive tweak remains; keep compact */
+@media (max-width: 420px) {
+  .calendar thead th { font-size: 10px; padding: 3px 2px; }
+  .calendar tbody td { height: 36px; padding: 4px 2px; }
 }
 
-.social-item .social-link {
-  color: var(--light-gray-70);
-  font-size: 18px;
+/* Highlight today's number: color + bold (instead of a dot) */
+.calendar td.today .date-num {
+  color: var(--orange-yellow-crayola);
+  font-weight: 700;
 }
 
-
-.social-item .social-link:hover { color: var(--light-gray); }
-
-
-
-
+/* Optional: remove dot rules if dot is not used */
+.calendar .dot { display: none !important; }
 
 /*-----------------------------------*\
   #NAVBAR
@@ -2117,3 +2041,19 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; display: inline; }
 
 }
+
+/*-----------------------------------*\
+  #CALENDAR
+\*-----------------------------------*/
+
+.calendar-caption {
+  color: var(--white-2);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+/* ensure calendar table fits under caption */
+#calendar-wrapper .calendar table { margin-top: 0; }
