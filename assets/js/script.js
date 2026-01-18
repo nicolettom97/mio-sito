@@ -224,3 +224,83 @@ function toggleContentContacts() {
   }
 }
 
+// Calendar generator: inject monthly calendar into #calendar
+(function() {
+  function renderCalendar(containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    container.innerHTML = '';
+
+    const now = new Date();
+    const todayY = now.getFullYear();
+    const todayM = now.getMonth();
+    const todayD = now.getDate();
+
+    // create caption with month and year (English locale)
+    const caption = document.createElement('div');
+    caption.className = 'calendar-caption';
+    caption.textContent = now.toLocaleString('en-US', { month: 'long', year: 'numeric' });
+    container.appendChild(caption);
+
+    const first = new Date(todayY, todayM, 1);
+    const startIndex = (first.getDay() + 6) % 7; // Monday=0
+    const daysInMonth = new Date(todayY, todayM + 1, 0).getDate();
+
+    const tbl = document.createElement('table');
+    const thead = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    const weekdays = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+    weekdays.forEach(w => {
+      const th = document.createElement('th');
+      th.textContent = w;
+      headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+    tbl.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+    let day = 1;
+
+    for (let week = 0; week < 6 && day <= daysInMonth; week++) {
+      const tr = document.createElement('tr');
+      for (let d = 0; d < 7; d++) {
+        const td = document.createElement('td');
+        if (week === 0 && d < startIndex || day > daysInMonth) {
+          td.className = 'empty';
+          td.innerHTML = '&nbsp;';
+        } else {
+          const span = document.createElement('span');
+          span.className = 'date-num';
+          span.textContent = day;
+          td.appendChild(span);
+          day++;
+        }
+        tr.appendChild(td);
+      }
+      tbody.appendChild(tr);
+    }
+
+    tbl.appendChild(tbody);
+    container.appendChild(tbl);
+
+    // highlight today's cell by matching day number (calendar shows current month)
+    const dateSpans = container.querySelectorAll('.date-num');
+    dateSpans.forEach(s => {
+      if (Number(s.textContent) === todayD) {
+        const td = s.closest('td');
+        if (td) {
+          td.classList.add('today');
+          // remove any existing dot elements (cleanup from previous versions)
+          const existingDot = td.querySelector('.dot');
+          if (existingDot) existingDot.remove();
+          // style will target the .date-num inside td.today via CSS
+        }
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    renderCalendar('calendar');
+  });
+})();
+
